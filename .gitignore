@@ -133,3 +133,4 @@ dmypy.json
 
 # Project folders
 output
+chromedriver.log
