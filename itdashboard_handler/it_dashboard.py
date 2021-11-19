@@ -8,7 +8,7 @@ from datetime import timedelta
 import re
 
 # project modules
-from common import DOWNLOAD_FOLDER
+from common import OUTPUT_PATH
 from common.config_parser.config_manager import ConfigManager
 from common.logger.log_handler import LogHandler
 
@@ -19,7 +19,7 @@ from RPA.Browser.Selenium import Selenium
 config = ConfigManager()
 log = LogHandler()
 selenium = Selenium()
-selenium.set_download_directory(directory=DOWNLOAD_FOLDER, download_pdf=True)
+selenium.set_download_directory(directory=OUTPUT_PATH, download_pdf=True)
 
 
 def open_browser():
